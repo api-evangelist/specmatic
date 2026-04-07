@@ -26,9 +26,9 @@ created: '2025-01-25'
 modified: '2026-03-16'
 position: Consuming
 description: >-
-  Specmatic can perform Contract vs Contract testing between two versions of
+  Specmatic can perform Contract vs Contract testing between two versions of
   your API Specification file and provide accurate results about backward
-  compatibility breaking changes. Since this is a completely No Code
+  compatibility breaking changes. Since this is a completely No Code
   capability, you do not have to write any code on the API Client or Service
   Applications.
 maintainers:
