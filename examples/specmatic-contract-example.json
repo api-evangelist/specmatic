@@ -1,0 +1,12 @@
+{
+  "id": "contract-openapi-petstore-v1",
+  "name": "Petstore REST API Contract",
+  "specificationFormat": "OpenAPI",
+  "specificationVersion": "3.0.3",
+  "protocol": "HTTP",
+  "specificationUrl": "https://raw.githubusercontent.com/specmatic/petstore-contracts/main/petstore.yaml",
+  "backwardCompatible": true,
+  "coveragePercent": 94.5,
+  "createdAt": "2026-01-15T10:00:00Z",
+  "updatedAt": "2026-05-01T14:30:00Z"
+}

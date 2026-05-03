@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://specmatic.io/schemas/contract",
+  "title": "Specmatic Contract",
+  "description": "Represents an API contract in the Specmatic platform, derived from an API specification file.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for the contract."
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable name for the contract."
+    },
+    "specificationFormat": {
+      "type": "string",
+      "enum": ["OpenAPI", "AsyncAPI", "gRPC", "GraphQL", "WSDL", "Arazzo", "Avro"],
+      "description": "Format of the API specification that defines the contract."
+    },
+    "specificationVersion": {
+      "type": "string",
+      "description": "Version of the specification format (e.g., '3.1.0' for OpenAPI)."
+    },
+    "protocol": {
+      "type": "string",
+      "enum": [
+        "HTTP", "Kafka", "JMS", "AMQP", "SOAP", "Redis", "gRPC",
+        "GraphQL", "GooglePubSub", "RabbitMQ", "ActiveMQ", "AWSSNS",
+        "AWSSQS", "AWSEventBridge", "IBMMQ", "MQTT", "WebSocket", "MCP"
+      ],
+      "description": "Communication protocol the contract covers."
+    },
+    "specificationUrl": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL or file path to the raw specification file."
+    },
+    "backwardCompatible": {
+      "type": "boolean",
+      "description": "Whether the current version is backward compatible with the previous version."
+    },
+    "coveragePercent": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100,
+      "description": "Percentage of specification paths/operations covered by tests."
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when the contract was first registered."
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp of the last contract update."
+    }
+  },
+  "required": ["id", "name", "specificationFormat", "protocol"],
+  "additionalProperties": false
+}

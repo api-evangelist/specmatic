@@ -1,0 +1,60 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "specmatic": "https://specmatic.io/vocab/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "Contract": {
+      "@id": "specmatic:Contract",
+      "@type": "@id",
+      "schema:description": "An API specification used as an executable agreement between API producer and consumer."
+    },
+    "ContractTest": {
+      "@id": "specmatic:ContractTest",
+      "@type": "@id",
+      "schema:description": "A test that verifies a service implementation against its API contract."
+    },
+    "Stub": {
+      "@id": "specmatic:Stub",
+      "@type": "@id",
+      "schema:description": "A simulated API endpoint returning specification-compliant responses."
+    },
+    "ApiCoverage": {
+      "@id": "specmatic:ApiCoverage",
+      "@type": "@id",
+      "schema:description": "A metric measuring how much of an API specification is exercised by tests."
+    },
+
+    "specificationFormat": {
+      "@id": "specmatic:specificationFormat",
+      "@type": "@vocab"
+    },
+    "protocol": {
+      "@id": "specmatic:protocol",
+      "@type": "@vocab"
+    },
+    "breakingChange": {
+      "@id": "specmatic:breakingChange",
+      "@type": "xsd:boolean"
+    },
+    "backwardCompatible": {
+      "@id": "specmatic:backwardCompatible",
+      "@type": "xsd:boolean"
+    },
+    "coveragePercent": {
+      "@id": "specmatic:coveragePercent",
+      "@type": "xsd:decimal"
+    },
+
+    "name": "schema:name",
+    "description": "schema:description",
+    "url": "schema:url",
+    "version": "schema:version",
+    "dateCreated": "schema:dateCreated",
+    "dateModified": "schema:dateModified",
+    "provider": "schema:provider",
+    "SoftwareApplication": "schema:SoftwareApplication",
+    "APIReference": "schema:APIReference"
+  }
+}

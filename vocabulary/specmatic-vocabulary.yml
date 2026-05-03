@@ -1,0 +1,163 @@
+vocabulary:
+  name: Specmatic Vocabulary
+  description: >-
+    Domain vocabulary for Specmatic, an AI-powered API contract testing and
+    service virtualization platform supporting contract-driven development
+    across REST, gRPC, GraphQL, Kafka, and other protocols.
+  created: '2026-05-02'
+  modified: '2026-05-02'
+
+  terms:
+    - term: Contract
+      definition: >-
+        An API specification (OpenAPI, AsyncAPI, gRPC proto, GraphQL schema,
+        WSDL) used as an executable agreement between API producer and consumer.
+      related:
+        - API Specification
+        - Contract Testing
+        - Contract-Driven Development
+
+    - term: Contract Testing
+      definition: >-
+        A testing approach where both the API provider and consumer verify their
+        implementations against a shared contract (specification), eliminating
+        integration surprises.
+      related:
+        - Contract
+        - Consumer-Driven Contract Testing
+        - Provider Contract Testing
+
+    - term: Contract-Driven Development (CDD)
+      definition: >-
+        A development methodology in which API contracts (specifications) are
+        defined first and used to drive parallel development of producers and
+        consumers before integration occurs.
+      related:
+        - Contract
+        - Service Virtualization
+        - API-First
+
+    - term: Service Virtualization
+      definition: >-
+        The simulation of dependent API services using their specifications,
+        allowing teams to develop and test without access to real downstream
+        services.
+      related:
+        - API Mocking
+        - Stub
+        - Contract
+
+    - term: Stub
+      definition: >-
+        A simulated API endpoint that returns specification-compliant responses,
+        generated automatically from an API contract.
+      related:
+        - Service Virtualization
+        - API Mocking
+
+    - term: Backward Compatibility
+      definition: >-
+        A property of an API change where existing consumers continue to work
+        correctly after the change. Specmatic detects breaking changes between
+        two specification versions automatically.
+      related:
+        - Breaking Change
+        - Contract
+        - API Versioning
+
+    - term: Breaking Change
+      definition: >-
+        A change to an API specification that causes existing consumers to fail,
+        such as removing a required field, changing a data type, or deleting
+        an endpoint.
+      related:
+        - Backward Compatibility
+        - Contract
+
+    - term: API Coverage
+      definition: >-
+        A metric measuring how much of an API specification is exercised by
+        actual traffic or tests, used to detect spec-implementation drift.
+      related:
+        - Contract Drift
+        - Contract Testing
+
+    - term: Contract Drift
+      definition: >-
+        The divergence between an API specification and its actual implementation
+        over time, leading to undocumented behaviors and integration failures.
+      related:
+        - API Coverage
+        - Contract Testing
+
+    - term: Proxy Mode
+      definition: >-
+        A Specmatic operating mode that intercepts real API traffic to record
+        interactions and generate or validate specification files automatically.
+      related:
+        - Traffic Recording
+        - Spec Generation
+
+    - term: Genie
+      definition: >-
+        Specmatic's AI product that generates API specifications and MCP servers
+        from plain English descriptions.
+      related:
+        - AI-Powered
+        - Spec Generation
+        - MCP
+
+    - term: Studio
+      definition: >-
+        Specmatic's visual interface for designing API workflows and running
+        contract tests without writing code.
+      related:
+        - No-Code
+        - Contract Testing
+
+    - term: Insights
+      definition: >-
+        Specmatic's governance product providing API ecosystem dependency
+        tracking, compliance monitoring, and coverage reporting.
+      related:
+        - API Governance
+        - API Coverage
+        - Compliance
+
+    - term: MCP (Model Context Protocol)
+      definition: >-
+        An AI agent communication protocol supported by Specmatic for stubbing
+        and testing AI model context servers.
+      related:
+        - Genie
+        - AI-Powered
+
+    - term: JDBC Stubbing
+      definition: >-
+        A Specmatic feature that simulates database connections for testing
+        purposes, removing the need for a real database in contract tests.
+      related:
+        - Service Virtualization
+        - Stub
+
+    - term: Resiliency Testing
+      definition: >-
+        Testing that verifies an API consumer handles error responses and edge
+        cases correctly, automatically generated from the API contract.
+      related:
+        - Contract Testing
+        - API Testing
+
+  tags:
+    - API Contract Testing
+    - API Governance
+    - API Mocking
+    - Backward Compatibility
+    - Contract-Driven Development
+    - Service Virtualization
+    - OpenAPI
+    - AsyncAPI
+    - gRPC
+    - GraphQL
+    - Kafka
+    - CI/CD Integration

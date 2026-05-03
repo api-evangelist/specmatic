@@ -1,0 +1,76 @@
+{
+  "title": "Specmatic Contract Structure",
+  "description": "Hierarchical structure of a Specmatic API contract resource.",
+  "type": "object",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "required": true,
+      "description": "Unique identifier for the contract."
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "required": true,
+      "description": "Human-readable contract name."
+    },
+    {
+      "name": "specificationFormat",
+      "type": "enum",
+      "required": true,
+      "values": ["OpenAPI", "AsyncAPI", "gRPC", "GraphQL", "WSDL", "Arazzo", "Avro"],
+      "description": "API specification format."
+    },
+    {
+      "name": "specificationVersion",
+      "type": "string",
+      "required": false,
+      "description": "Version of the specification format."
+    },
+    {
+      "name": "protocol",
+      "type": "enum",
+      "required": true,
+      "values": [
+        "HTTP", "Kafka", "JMS", "AMQP", "SOAP", "Redis", "gRPC",
+        "GraphQL", "GooglePubSub", "RabbitMQ", "ActiveMQ", "AWSSNS",
+        "AWSSQS", "AWSEventBridge", "IBMMQ", "MQTT", "WebSocket", "MCP"
+      ],
+      "description": "Communication protocol."
+    },
+    {
+      "name": "specificationUrl",
+      "type": "string",
+      "format": "uri",
+      "required": false,
+      "description": "URL or path to the specification file."
+    },
+    {
+      "name": "backwardCompatible",
+      "type": "boolean",
+      "required": false,
+      "description": "Whether the contract is backward compatible."
+    },
+    {
+      "name": "coveragePercent",
+      "type": "number",
+      "required": false,
+      "description": "Specification coverage percentage (0-100)."
+    },
+    {
+      "name": "createdAt",
+      "type": "string",
+      "format": "date-time",
+      "required": false,
+      "description": "Contract creation timestamp."
+    },
+    {
+      "name": "updatedAt",
+      "type": "string",
+      "format": "date-time",
+      "required": false,
+      "description": "Contract last updated timestamp."
+    }
+  ]
+}
