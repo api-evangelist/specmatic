@@ -20,7 +20,7 @@ tags:
 url: >-
   https://raw.githubusercontent.com/api-evangelist/specmatic/refs/heads/main/apis.yml
 created: '2025-01-25'
-modified: '2026-05-02'
+modified: '2026-05-19'
 specificationVersion: '0.19'
 apis:
   - aid: specmatic:specmatic
@@ -96,6 +96,12 @@ common:
     url: https://github.com/specmatic/specmatic-order-contracts
   - type: GitHubAction
     url: https://github.com/specmatic/specmatic-insights-build-reporter-github-action
+  - name: MCP Server
+    url: https://github.com/specmatic/specmatic-mcp-server
+    type: MCPServer
+  - name: Agent Skills
+    url: https://github.com/specmatic/skills
+    type: AgentSkill
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
