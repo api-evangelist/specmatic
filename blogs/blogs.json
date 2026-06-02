@@ -2,13 +2,13 @@
   "repo": "specmatic",
   "feeds": [
     {
-      "source": "https://specmatic.io/specmatic-updates/",
-      "feed_url": "",
+      "source": "https://specmatic.io/pricing/",
+      "feed_url": "https://specmatic.io/pricing/",
       "title": "",
       "saved": 0,
-      "error": "no_feed"
+      "method": "none"
     }
   ],
-  "fetched": "2026-05-17T20:48:52Z",
+  "fetched": "2026-06-01T23:35:02Z",
   "post_count": 0
 }
