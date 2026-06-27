@@ -86,11 +86,11 @@ common:
   url: https://specmatic.io/contact-us/
 - type: CaseStudies
   url: https://specmatic.io/case-studies/
-- type: SDK
+- type: SDKs
   url: https://github.com/specmatic/specmatic-node
   x-name: Specmatic Node.js SDK
   x-language: TypeScript
-- type: SDK
+- type: SDKs
   url: https://github.com/specmatic/specmatic-python-extensions
   x-name: Specmatic Python Extensions
   x-language: Python
@@ -103,7 +103,7 @@ common:
   type: MCPServer
 - name: Agent Skills
   url: https://github.com/specmatic/skills
-  type: AgentSkill
+  type: AgentSkills
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
