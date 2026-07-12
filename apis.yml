@@ -70,6 +70,8 @@ apis:
   - url: graphql/specmatic-graphql.md
     type: GraphQL
 common:
+- type: DomainSecurity
+  url: security/specmatic-domain-security.yml
 - type: Website
   url: https://specmatic.io
 - type: Documentation
