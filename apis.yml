@@ -119,7 +119,7 @@ common:
   url: https://github.com/specmatic/specmatic-python-extensions
   x-name: Specmatic Python Extensions
   x-language: Python
-- type: Samples
+- type: Examples
   url: https://github.com/specmatic/specmatic-order-contracts
 - type: GitHubAction
   url: https://github.com/specmatic/specmatic-insights-build-reporter-github-action
