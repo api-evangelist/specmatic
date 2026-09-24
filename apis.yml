@@ -90,8 +90,6 @@ apis:
   - type: Vocabulary
     url: >-
       https://raw.githubusercontent.com/api-evangelist/specmatic/refs/heads/main/vocabulary/specmatic-vocabulary.yml
-  - url: graphql/specmatic-graphql.md
-    type: GraphQL
 common:
 - type: DomainSecurity
   url: security/specmatic-domain-security.yml

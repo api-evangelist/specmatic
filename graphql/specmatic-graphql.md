@@ -1,1 +1,0 @@
-# Specmatic GraphQL API
