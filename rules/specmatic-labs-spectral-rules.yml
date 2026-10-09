@@ -1,0 +1,14 @@
+# harvested from https://github.com/specmatic/labs/blob/c381bc506e60db9e8c00fd593ec450381d4235e0/continuous-integration/.spectral.yaml on 2026-10-09 — a Spectral ruleset published in the provider's own GitHub repository (specmatic/labs); found by GitHub code search, fetched verbatim
+x-method: harvested
+x-stamped: 2026-10-09
+x-source-url: https://github.com/specmatic/labs/blob/c381bc506e60db9e8c00fd593ec450381d4235e0/continuous-integration/.spectral.yaml
+extends:
+  - spectral:oas
+
+rules:
+  info-contact: off
+  info-description: off
+  oas3-api-servers: off
+  operation-description: off
+  operation-operationId: off
+  operation-tags: off

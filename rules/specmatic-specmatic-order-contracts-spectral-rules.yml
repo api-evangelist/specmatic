@@ -1,0 +1,13 @@
+# harvested from https://github.com/specmatic/specmatic-order-contracts/blob/2aa724db96914bf62e547fe971dda5785fba29d7/.spectral.yaml on 2026-10-09 — a Spectral ruleset published in the provider's own GitHub repository (specmatic/specmatic-order-contracts); found by GitHub code search, fetched verbatim
+x-method: harvested
+x-stamped: 2026-10-09
+x-source-url: https://github.com/specmatic/specmatic-order-contracts/blob/2aa724db96914bf62e547fe971dda5785fba29d7/.spectral.yaml
+extends: spectral:oas
+rules:
+  path-keys-no-trailing-slash: error
+  oas3-valid-media-example: warn
+
+overrides:
+  - files:
+      - "io/specmatic/examples/store/asyncapi/**"
+    rules: {}

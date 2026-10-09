@@ -139,6 +139,10 @@ common:
 - name: Agent Skills
   url: https://github.com/specmatic/skills
   type: AgentSkills
+- type: SpectralRules
+  url: https://github.com/specmatic/labs/blob/c381bc506e60db9e8c00fd593ec450381d4235e0/continuous-integration/.spectral.yaml
+- type: SpectralRules
+  url: https://github.com/specmatic/specmatic-order-contracts/blob/2aa724db96914bf62e547fe971dda5785fba29d7/.spectral.yaml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
